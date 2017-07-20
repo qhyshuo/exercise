@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#head{
+    height: 105px;
+    background: url("../images/headerbg.png") repeat-x scroll 0 0 #FFFFFF;
+}
+#header{
+    width: 990px;
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+}
+#header2{
+    width: 990px;
+    height: 37px;
+    background: #333333;
+    color: white;
+}
+#janeshop{
+    width: 990px;
+    margin: 0 auto;
+}
+#jnCatalog{
+    width: 190px;
+    height: 560px;
+    background: #00ff00;
+    float: left;
+}
+#jnContent{
+    float: right;
+    width: 795px;
+    height: 560px;
+    background: #98E0E6;
+}
+#jnContent1{
+    width: 795px;
+    height: 320px;
+    background: #BB3BD9;
+}
+#imgWrap{
+    height: 320px;
+    width: 550px;
+    background: #aabbcc;
+    float: left;
+}
+#notice{
+    width: 230px;
+    height: 320px;
+    float: right;
+    background: #6D84B4;
+}
+#jnContent2{
+    width: 795px;
+    height: 240px;
+    background: #777777;
+}
+#foot{
+
+}

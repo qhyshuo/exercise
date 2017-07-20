@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <title>中转选择页面</title>
+    <link rel="shortcut icon" href="../images/heart.ico"/>
+    <style>
+        html{
+            width:100%;
+            height:100%;
+        }
+        body{
+            width:100%;
+            height:100%;
+            background: #000000;
+        }
+        #container{
+            position:relative;
+            width:100%;
+            height:100%;
+            background: #08cdaa;
+            /*background: url("../images/background_pic.jpg");*/
+        }
+        #content{
+            width:30%;
+            height:30%;
+            border:3px solid white;
+            position:absolute;
+            top:40%;
+            left:35%;
+            animation: run 4s ease-out forwards;
+        }
+        @-webkit-keyframes run {
+            0% {
+                opacity: 1;
+            }
+            20%{
+                opacity:1
+            }
+            30%{
+                opacity:1
+            }
+            40%{
+                   opacity:1;
+               }
+            50%{
+                opacity:1;
+                transform:rotate(360deg);
+            }
+            60%{
+                opacity:1;
+            }
+            70%{
+                opacity:1;
+            }
+            80%{
+                opacity:1;
+            }
+            90%{
+                opacity:1;
+            }
+            100% {
+                opacity: 1;
+                transform:rotate(360deg);
+            }
+        }
+        #content a,div{
+            color:white;
+            position:absolute;
+        }
+        #content_title{
+            top:10%;
+            left:5%;
+        }
+        #content_aa{
+            top:30%;
+            left:15%;
+        }
+        #content_bb{
+            top:50%;
+            left:15%;
+        }
+        #container #content_a,#content #content_b{
+            width:10%;
+            height:20px;
+            background:white;
+            bottom:20px;
+            text-align: center;
+            color:#142637;
+            font-weight:800;
+            line-height:20px;
+        }
+        #content_a{
+            right:30%;
+        }
+        #content_b{
+            right:10%;
+        }
+        #content a:hover{
+            color:pink;
+        }
+        #content #content_a:hover{
+            background: #08BECE;
+        }
+        #content #content_b:hover{
+            background: #08BECE;
+        }
+        @media(max-width:892px){
+            #content_aa{
+                top:30%;
+                left:5%;
+
+            }
+            #content_bb{
+                top:50%;
+                left:5%;
+
+            }
+        }
+        @media (max-width: 786px) {
+            #content{
+               font-size:10px;
+            }
+        }
+        @media (max-width: 590px) {
+            #content{
+                width:50%;
+                left:25%;
+            }
+        }
+        @media (max-width: 356px){
+            #content{
+                width:70%;
+                left:15%;
+                height:30%;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="content">
+        <div id="content_title">请选择：</div>
+        <a href="#" id="content_aa">A:以管理员身份管理博客</a>
+        <a href="#" id="content_bb">B:以游客身份浏览于硕的博客</a>
+        <a href="../../index.html" id="content_a">A</a>
+        <a href="my_blog.html" id="content_b">B</a>
+    </div>
+</div>
+<script src="../js/jquery-1.12.4.js"></script>
+<script>
+    $(function(){
+        var i=0;
+        $('#content_b').on('mouseover',function(){
+            var color=['red','white'];
+
+//            console.log(color[i]);
+               $(this).css('background',color[i]);
+             i=(i+1)%2;
+        });
+        setInterval(function(){
+            $('#content_b').trigger('mouseover');
+        },500)
+    })
+
+</script>
+
+</body>
+</html>

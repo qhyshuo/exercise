@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, input, select, textarea {
+    font-size: 12px;
+    font-family: '\5fae\8f6f\96c5\9ed1',arial,sans-serif;
+    color: #666;
+    background: #fff;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    height: 114px;
+    position: relative;
+}
+.user-info{
+    width: 240px;
+    height: 90px;
+    margin-left: 233px;
+    margin-top: 12px;
+    float: left;
+}
+.user-avatar{
+    width: 82px;
+    height: 82px;
+    float: left;
+}
+.user-avatar span{
+    width: 72px;
+    height: 72px;
+    padding: 4px;
+    border: 1px solid #f8f8f8;
+    border-radius: 500px;
+    background: #fff;
+}
+.user-avatar img{
+    width: 72px;
+    height: 72px;
+    border-radius: 500px;
+}
+.user-name{
+    float: right;
+    width: 140px;
+    margin: 24px 0 6px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #90c044;
+}
+#prompt-msg{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 10px;
+    font-weight: normal;
+}
+.utilities{
+    width: 650px;
+    height: 114px;
+    margin-right: 215px;
+    float: right;
+}
+.utilities li{
+    float: left;
+    width: 76px;
+    height: 84px;
+    margin-top: 30px;
+}
+.utilities li a{
+    width: 76px;
+    height: 68px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+.icon{
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: #bbbaba url("../image/menus.png") 0 0 no-repeat;
+    border-radius: 500px;
+    margin-bottom: 10px;
+}
+.utilities ul li.new-entry a {
+    color: #90c044;
+}
+.utilities ul li.new-entry a .icon {
+    background-color: #90c044;
+}
+.utilities ul li.new-entry a .icon {
+    background-position: -40px 0;
+}
+.utilities ul li.blog-list a .icon {
+    background-position: -80px 0;
+}
+.utilities ul li.album-list a .icon {
+    background-position: -120px 0;
+}
+.utilities ul li.friend-list a .icon {
+    background-position: -160px 0;
+}
+.utilities ul li.events a .icon {
+    background-position: -200px 0;
+}
+.utilities ul li.vip a .icon {
+    background-position: -240px 0;
+}
+.utilities ul li.home a .icon {
+    background-position: -280px 0;
+}
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: #90c044;
+    margin-bottom: 20px;
+}
+.container{
+    width: 860px;
+    height: 40px;
+    margin: auto;
+}
+.nav ul li {
+    float: left;
+    margin-right: 38px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.nav ul li:last-child{
+    margin-right: 0;
+}
+.nav ul li a{
+    color: white;
+}
+.nav ul .xinrizhi{
+    background: white;
+    border-radius: 5px;
+}
+.nav ul .xinrizhi a{
+    color: #90c044;
+}
+.content{
+    width: 860px;
+    height: 596px;
+    margin: auto;
+}
+.current-blog a {
+    color: #90c044;
+}
+#title{
+    width: 420px;
+    height: 28px;
+    border: 1px solid #C4C4C4;
+    margin: 20px 0;
+}
+#con{
+    width: 872px;
+    height: 309px;
+    margin-bottom: 30px;
+}
+#classify{
+    width: 131px;
+    height: 26px;
+    border: 1px solid #C4C4C4;
+}
+#pub{
+    width: 70px;
+    height: 30px;
+    background: #90c044;
+    color:white;
+    margin-left: 540px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>多级菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #meau .main-meau {
+            width: 100px;
+            height: 130px;
+            float: left;
+            margin-right: 5px;
+        }
+
+        #meau .main-meau a {
+            display: block;
+            background: gray;
+            color: white;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        #meau .sub-meau {
+            display: none;
+        }
+
+        #meau .sub-meau a {
+            width: 100px;
+            height: 30px;
+            border-bottom: 1px dashed #000;
+            background: #cccccc;
+            display: block;
+            text-align: left;
+            color: blue;
+            text-indent: 5px;
+        }
+
+        #meau .main-meau:hover .sub-meau {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<ul id="meau">
+    <li class="main-meau">
+        <a href="">Link1</a>
+        <ul class="sub-meau">
+            <li><a href="">Sublink1</a></li>
+            <li><a href="">Sublink2</a></li>
+            <li><a href="">Sublink3</a></li>
+        </ul>
+    </li>
+    <li class="main-meau">
+        <a href="">Link2</a>
+        <ul class="sub-meau">
+            <li><a href="">Sublink1</a></li>
+            <li><a href="">Sublink2</a></li>
+            <li><a href="">Sublink3</a></li>
+        </ul>
+    </li>
+    <li class="main-meau">
+        <a href="">Link3</a>
+        <ul class="sub-meau">
+            <li><a href="">Sublink1</a></li>
+            <li><a href="">Sublink2</a></li>
+            <li><a href="">Sublink3</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

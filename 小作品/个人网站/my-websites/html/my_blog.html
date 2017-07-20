@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <title></title>
+    <style>
+        .wrapper {
+            width: 85%;
+            margin: 0 auto;
+
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        header {
+            height: 50px;
+        }
+
+        .carousel {
+            background: #08BECE;
+            height: 50px;
+        }
+
+        header ul li:first-child {
+            float: left;
+            line-height: 50px;
+            font-weight: 800;
+            margin-left: 20px;
+        }
+        header ul li{
+            float: right;
+            line-height: 50px;
+            font-weight: 800;
+        }
+        header ul a{
+            line-height: 50px;
+            font-weight: 800;
+        }
+        header ul li:last-child {
+            float: right;
+            line-height: 50px;
+            font-weight: 800;
+            margin-right: 20px;
+        }
+
+        .info {
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #VisitorInfo {
+            float: left;
+            font-family: Arial;
+            font-size: 15px;
+        }
+
+        #SearchBar {
+            float: right;
+        }
+
+        #title {
+            height: 80px;
+        }
+
+        #portrait img {
+            width: 50px;
+            height: 50px;
+        }
+
+        #portrait, #lnks {
+            float: left;
+            height: 25px;
+            line-height: 25px;
+        }
+        #container{
+            width:100%;
+            height:400px;
+            border-bottom: 1px solid #142637;
+        }
+        #container ul li{
+            height:130px;
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="wrapper  carousel">
+        <ul>
+            <li>于硕的博客</li>
+            <li><a href="../../index.html">返回首页</a></li>
+            <li>因上努力，果上随缘</li>
+        </ul>
+    </div>
+</header>
+<div class="info">
+    <div class="wrapper">
+        <div id="VisitorInfo">
+
+            当前访客身份：
+            游客 [ <a href="login.html">登录</a> | <a href="reg.html">注册</a> ]
+				<span id="OSC_Notification">
+			<a href="inbox.htm" class="msgbox" title="进入我的留言箱">你有<em>0</em>新留言</a>
+					</span>
+
+        </div>
+
+        <div id="SearchBar">
+            <form action="Search">
+                <input name="user" value="154693" type="hidden">
+                <input id="txt_q" name="q" class="SERACH" value="在此空间的博客中搜索"
+                       onblur="(this.value=='')?this.value='在此空间的博客中搜索':this.value"
+                       onfocus="if(this.value=='在此空间的博客中搜索'){this.value='';};this.select();" type="text">
+                <input class="SUBMIT" value="搜索" type="submit">
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="title">
+    <div class="wrapper">
+        <div id="portrait">
+            <a href="adminIndex.htm">
+                <img src="../images/qhy.jpg" alt="Johnny" title="Johnny">
+            </a>
+        </div>
+        <div id="lnks">
+            <strong>于硕的博客</strong>
+
+            <div>
+        <span>
+        <a href="#">他的博客列表</a>&nbsp;|
+        <a href="sendMsg.htm">发送留言</a>
+        </span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="wrapper">
+    <div id="container">
+
+        <ul>
+            <li class='Blog'>
+
+                <h2 class='BlogAccess_true BlogTop_0'><a href="viewPost_comment.htm">测试文章3</a></h2>
+
+                <div class='outline'>
+
+                    <span class='time'>发表于 2011年06月18日 0:34</span>
+
+                    <span class='catalog'>分类: <a href="?catalog=92334">工作日志</a></span>
+
+                    <span class='stat'>统计: 0评/0阅</span>
+
+                </div>
+
+                <div class='TextContent' id='blog_content_24027'>
+
+                    测试文章3
+
+                    <div class='fullcontent'><a href="viewPost_comment.htm">阅读全文...</a></div>
+
+                </div>
+
+            </li>
+            <li class="Blog">
+                <h2 class="BlogAccess_true BlogTop_0"><a href="viewPost_logined.htm">测试文章2</a></h2>
+
+                <div class="outline">
+                    <span class="time">发表于 2011年06月17日 23:06</span>
+                    <span class="catalog">分类: <a href="#">工作日志</a></span>
+                    <span class="stat">统计: 0评/1阅</span>
+                </div>
+                <div class="TextContent" id="blog_content_24026">
+                    测试文章1
+                    <div class="fullcontent"><a href="viewPost.htm">阅读全文...</a></div>
+                </div>
+            </li>
+            <li class="Blog" id="blog_24025">
+                <h2 class="BlogAccess_true BlogTop_0"><a href="viewPost.htm">测试文章1</a></h2>
+
+                <div class="outline">
+                    <span class="time">发表于 2011年06月17日 23:04</span>
+                    <span class="catalog">分类: <a href="#">工作日志</a></span>
+                    <span class="stat">统计: 0评/3阅</span>
+                </div>
+                <div class="TextContent" id="blog_content_24025">
+                    <b>测试文章1</b>
+
+                    <div class="fullcontent"><a href="viewPost.htm">阅读全文...</a></div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+</body>
+</html>

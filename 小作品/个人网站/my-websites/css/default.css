@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+#news,#game_news{
+    width:120px;
+    height:450px;
+    float:left;
+}
+
+#skin{
+    margin:5px;
+    list-style:none;
+    width:210px;
+    height:35px;
+    border:1px solid grey;
+}
+#skin li{
+    width:15px;
+    height:15px;
+    background-image: url('theme.gif');
+    float:left;
+    margin:5px;
+    cursor:pointer;
+}
+#skin_01{
+    background-position:0px 0px;
+}
+#skin_02{
+    background-position:15px 0px;
+}
+#skin_03{
+    background-position:35px 0px;
+}
+#skin_04{
+    background-position:55px 0px;
+}
+#skin_05{
+    background-position:75px 0px;
+}
+#skin_06{
+    background-position:95px 0px;
+}
+#skin_01.selected{
+    background-position:0px 15px !important;
+}
+#skin_02.selected {
+    background-position: 15px 15px !important;
+}
+
+#skin_03.selected {
+    background-position: 35px 15px !important;
+}
+
+#skin_04.selected {
+    background-position: 55px 15px !important;
+}
+
+#skin_05.selected {
+    background-position: 75px 15px !important;
+}
+
+#skin_06.selected {
+    background-position: 95px 15px !important;
+}
+h1 {
+    margin: 10px;
+    padding: 10px 20px;
+    width: 60px;
+    color: #ffffff;
+    font-size: 14px;
+}
